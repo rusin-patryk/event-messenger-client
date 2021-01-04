@@ -1,0 +1,55 @@
+@import 'variables';
+
+.v-list-item--active {
+  div.item {
+    color: white !important;
+  }
+
+  .badge {
+    display: none;
+  }
+}
+
+.menu-text-button {
+  position: relative;
+  left: -10px;
+}
+
+.event-picker-container {
+  width: 280px;
+  font-size: 0.875rem;
+  max-width: 100%;
+}
+
+.event-picker {
+  position: relative;
+  top: -1px;
+
+  .v-input__slot {
+    margin-bottom: 0 !important;
+    background-color: transparent !important;
+  }
+
+  .v-text-field__details {
+    display: none !important;
+  }
+
+  .v-icon {
+    color: $secondary;
+    caret-color: $secondary;
+  }
+
+  .v-select__selection {
+    max-width: 100% !important;
+  }
+
+  .v-select__selection, label {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .event-picker-container {
+    width: 200px;
+  }
+}

@@ -1,0 +1,31 @@
+.sidebar-list .v-list-item__title {
+  height: 20px;
+  line-height: 20px !important;
+}
+
+.f-17 {
+  font-size: 17px !important;
+}
+
+.icon-field {
+  padding-left: 19px;
+}
+
+.sidebar-list {
+  .v-list-item {
+    max-height: 58px;
+  }
+
+  .mini-variant {
+    position: relative;
+    right: -8px;
+  }
+
+  .mini-variant-icons {
+    width: 70px;
+  }
+}
+
+.main-menu .v-list-item--active .badge {
+  display: none;
+}

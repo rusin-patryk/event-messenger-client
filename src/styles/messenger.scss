@@ -1,0 +1,319 @@
+@import 'variables';
+
+.quick-chat-container {
+  border-radius: 0 !important;
+
+  .container-message-manager {
+    height: auto !important;
+    min-height: 75px !important;
+    max-height: 200px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+
+    .message-text-box {
+      display: flex;
+      margin-right: 90px;
+
+      .message-input {
+        height: auto !important;
+        min-height: 22px !important;
+        max-height: 185px !important;
+      }
+    }
+
+    .container-send-message {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 110px;
+      display: flex;
+      background-color: $secondary;
+      border-radius: 0 !important;
+
+      &:hover {
+        background-color: darken($secondary, 1);
+      }
+
+      & > span {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+      }
+
+      ::after {
+        content: 'SEND';
+        font-size: 13px;
+        margin-left: 7px;
+        color: white;
+      }
+    }
+  }
+
+  &.disabled {
+    .container-message-manager {
+      position: relative;
+      pointer-events: none;
+
+      &:before {
+        content: 'READ-ONLY, account is disabled';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        background-color: $mainLightGrey;
+        line-height: 74px;
+        padding: 0 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .quick-chat-container {
+
+    .container-message-manager {
+      height: auto !important;
+      min-height: 50px !important;
+      max-height: 120px !important;
+
+      .message-text-box {
+        display: flex;
+        margin-right: 35px;
+
+        .message-input {
+          height: auto !important;
+          min-height: 22px !important;
+          max-height: 105px !important;
+        }
+      }
+
+      .container-send-message {
+        width: 54px;
+
+        ::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.container-message-manager {
+  border-top: solid 1px rgba(0, 0, 0, .12);
+}
+
+.participant-search .v-text-field__details {
+  display: none !important;
+}
+
+.quick-chat-container .container-message-display .message-container {
+  flex-wrap: nowrap;
+  padding-top: 15px;
+}
+
+.container-message-display .myself-message-body .message-text {
+  margin-bottom: 0;
+}
+
+.messenger-tabs {
+  .v-tabs-bar {
+    height: 64px !important;
+  }
+
+  .v-tab {
+    color: #0C2365 !important;
+    caret: #0C2365 !important;
+    position: relative;
+
+    .tab-close-button {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+    }
+
+    span {
+      color: #0C2365 !important;
+      caret: #0C2365 !important;
+      text-transform: capitalize !important;
+      font-weight: 500;
+    }
+
+    span.general {
+      text-transform: lowercase !important;
+    }
+  }
+}
+
+.messenger-active-tab {
+  background-color: white;
+  color: #0C2365 !important;
+  caret: #0C2365 !important;
+
+  span {
+    color: #0C2365 !important;
+    caret: #0C2365 !important;
+  }
+}
+
+.messenger-main-container .filters-on-mobile {
+  display: none !important;
+}
+
+@media (min-width: 960px) {
+  .participant-button-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 959px) {
+  .participant-button-mobile {
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+  .participant-list {
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    z-index: 3;
+    background-color: white;
+  }
+  .theme--dark .participant-list {
+    background-color: black !important;
+  }
+  .participant-list-mobile--active {
+    left: 0;
+    animation: openList 0.4s ease;
+    -moz-animation: openList 0.4s ease; /* Firefox */
+    -webkit-animation: openList 0.4s ease; /* Safari and Chrome */
+  }
+  .participant-list-mobile--close {
+    left: -100%;
+    animation: closeList 0.4s ease;
+    -moz-animation: closeList 0.4s ease; /* Firefox */
+    -webkit-animation: closeList 0.4s ease; /* Safari and Chrome */
+  }
+  .messenger-main-container .filters-on-mobile {
+    display: block !important;
+    position: relative;
+  }
+  .messenger-main-container .filters-on-desktop {
+    display: none !important;
+  }
+}
+
+@keyframes openList {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-moz-keyframes openList {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes openList {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes closeList {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@-moz-keyframes closeList {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes closeList {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+.quick-chat-container .container-message-display .message-container {
+  flex-wrap: nowrap !important;
+}
+
+.theme--dark .messenger-main-container {
+  .v-item-group {
+    background-color: #252525 !important;
+  }
+
+  .messenger-tabs .v-tab span {
+    color: white !important;
+  }
+
+  .messenger-active-tab {
+    background-color: #353535 !important;
+  }
+
+  .quick-chat-container .container-message-manager {
+    background-color: #1f1f1f !important;
+    box-shadow: 0 -2px 40px 0 rgba(0, 0, 0, .67) !important;
+  }
+
+  .quick-chat-container.disabled .container-message-manager:before {
+    background-color: #1f1f1f !important;
+  }
+
+  .quick-chat-container .container-message-manager .container-send-message {
+    opacity: .85 !important;
+
+    &:hover {
+      opacity: 1 !important;
+      background-color: $secondary;
+    }
+  }
+
+  .container-message-display {
+    background-color: #000 !important;
+    border-left: 1px solid #353535;
+    border-right: 1px solid #353535;
+  }
+
+  .message-container .message-text {
+    background-color: #707070 !important;
+    color: white !important;
+    a {
+      color: white !important;
+    }
+  }
+
+  .message-container .myself-message-body .message-text {
+    background-color: #6191c1 !important;
+    color: white !important;
+    a {
+      color: white !important;
+    }
+  }
+}

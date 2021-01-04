@@ -1,0 +1,62 @@
+$error: #e54c43;
+$warning: #feb648;
+$success: #67cd86;
+$info: #1c76a6;
+
+.awn-toast {
+  font-family: 'Roboto', sans-serif;
+  border-radius: 6px !important;
+
+  &-wrapper {
+    border: none !important;
+    padding: 15px 65px 15px 15px;
+  }
+
+  &-label {
+    font-size: 16px !important;
+    color: white !important;
+  }
+
+  &-content {
+    font-size: 14px !important;
+    color: white !important;
+  }
+}
+
+@media (max-width: 550px) {
+  #awn-toast-container {
+    max-width: 320px;
+    right: 0;
+  }
+}
+
+.awn-toast-success {
+  background: $success !important;
+}
+
+.awn-toast-warning {
+  background: $warning !important;
+}
+
+.awn-toast-info {
+  background: $info !important;
+  color: black !important;
+}
+
+.awn-toast-alert {
+  background: $error !important;
+}
+
+.fa, .awn-toast.awn-toast-success b {
+  color: white !important;
+}
+
+.awn-toast-progress-bar:after {
+  top: 1px;
+  background: white !important;
+
+}
+
+#awn-toast-container.awn-top-left, #awn-toast-container.awn-top-right {
+  top: 1% !important;
+}

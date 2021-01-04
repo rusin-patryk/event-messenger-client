@@ -1,0 +1,16 @@
+.table-link {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.table-link:hover {
+  text-decoration: underline !important;
+}
+
+.users-table .v-text-field__details {
+  display: none !important;
+}
+
+.theme--dark .table-link {
+  color: white !important;
+}

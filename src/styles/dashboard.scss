@@ -1,0 +1,23 @@
+@import 'variables';
+
+.news-feed-box {
+  border-radius: 5px;
+  box-shadow: 0 3px 6px #00000029;
+
+  .news-feed-title {
+    background-color: $mainDarkBlue;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    font-size: .9rem;
+  }
+}
+
+.theme--dark.news-feed-box {
+  .news-feed-title {
+    background-color: $darkThemeSecondaryGray;
+  }
+
+  .news-feed-container {
+    background-color: $darkThemePrimaryGray;
+  }
+}

@@ -1,0 +1,26 @@
+@import 'variables';
+
+.v-card.v-sheet.theme--light {
+  background-color: $mainLightGrey;
+}
+
+.file-hover {
+  opacity: 0;
+  z-index: -1;
+  transition-duration: .5s;
+  transition-delay: .75s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: $mainDarkBlue;
+  color: white
+}
+
+.file-box:hover .file-hover, .file-hover:hover {
+  z-index: 1;
+  opacity: 1;
+  transition-duration: .25s;
+  transition-delay: 0s;
+}

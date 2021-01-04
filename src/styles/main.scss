@@ -1,0 +1,217 @@
+@import '../../node_modules/vue-awesome-notifications/dist/styles/style.scss';
+@import 'badge';
+@import 'dashboard';
+@import 'files';
+@import 'header';
+@import 'messenger';
+@import 'notifications';
+@import 'sidebar';
+@import 'table';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+.v-application {
+  font-family: $body-font-family, sans-serif !important;
+
+  &.theme--light, .theme--light.v-sheet, .theme--light.v-select .v-select__selection--comma, .theme--light.v-label, .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled), .theme--light.v-card > .v-card__text, .theme--light.v-card .v-card__subtitle {
+    color: $mainDarkBlue !important;
+  }
+
+  .v-text-field > .v-input__control > .v-input__slot:after {
+    border-color: $mainDarkBlue !important;
+  }
+
+  .title {
+    font-family: $title-font, sans-serif !important;
+  }
+}
+
+.v-list-item--active {
+  background-color: #38A0FA !important;
+
+  &:before {
+    background-color: transparent !important;
+  }
+}
+
+.v-application .primary--text, .v-application .v-list-item--active.primary--text .v-list-item__title {
+  color: white !important;
+  caret-color: white !important;
+}
+
+.v-application.theme--light .v-tab.v-tab--active, .v-application.theme--light .v-tabs-slider-wrapper {
+  color: white !important;
+  caret-color: white !important;
+}
+
+.logout-button {
+  position: absolute !important;
+  width: 100% !important;
+  bottom: 0 !important;
+}
+
+.v-input__prepend-inner .v-icon {
+  font-size: 20px !important;
+  margin-right: 4px !important;
+}
+
+.tiptap-vuetify-editor .v-btn.v-size--small i.v-icon {
+  font-size: .8rem;
+}
+
+.dialog-close {
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  padding: 18px !important;
+}
+
+.dialog-title-bar {
+  line-height: 32px;
+  position: sticky;
+  z-index: 1000;
+  width: 100%;
+  top: 0;
+}
+
+.theme--light .dialog-title-bar {
+  background-color: white
+}
+
+.theme--dark .dialog-title-bar {
+  background-color: #1e1e1e
+}
+
+.dialog-footer-bar {
+  position: sticky;
+  bottom: 0;
+}
+
+.invalid {
+  color: #b71c1c;
+}
+
+.v-data-table-header__icon {
+  margin-left: 6px;
+}
+
+.news-feed-container {
+  max-height: calc(100vh - 240px);
+  overflow-y: auto;
+}
+
+.news-feed-container.admin {
+  max-height: calc(100vh - 286px);
+}
+
+@media (min-width: 600px) {
+  .dashboard-container {
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+  }
+
+  .dashboard-container.admin {
+    max-height: calc(100vh - 226px);
+  }
+}
+
+.theme--light .text-editor, .tiptap-vuetify-editor__content {
+  background-color: white !important;
+}
+
+.theme--light .v-dialog .v-tabs {
+  background-color: #EFEFEF !important;
+
+  .v-tabs-slider {
+    color: #0C2365 !important;
+    caret: #0C2365 !important;
+  }
+
+  .v-tab, .v-tab.v-tab--active {
+    color: #0C2365 !important;
+    caret: #0C2365 !important;
+    position: relative;
+  }
+
+  .v-tab.v-tab--active {
+    font-weight: bold !important;
+  }
+}
+
+.theme--dark .v-dialog .v-tabs {
+  background-color: hsla(0, 0%, 100%, .08) !important;
+
+  .v-tabs-slider {
+    color: white !important;
+    caret: white !important;
+  }
+
+  .v-tab, .v-tab.v-tab--active {
+    color: white !important;
+    caret: white !important;
+    position: relative;
+  }
+
+  .v-tab.v-tab--active {
+    font-weight: bold !important;
+  }
+}
+
+.theme--dark .tiptap-vuetify-editor__content {
+  background-color: #121212 !important;
+}
+
+.theme--dark.v-application .tiptap-vuetify-editor__toolbar .v-toolbar {
+  background-color: #252525 !important;
+}
+
+/* eslint-disable-next-line */
+.theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) {
+  color: rgba(255, 255, 255, 0.54)
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.top-float-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 1264px) {
+  .show-on-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1263px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.header-filters {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.filter-element {
+  cursor: pointer;
+}
+
+.error--text .v-messages__message {
+  color: red !important;
+  font-weight: 500 !important;
+}
