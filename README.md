@@ -5,14 +5,17 @@
 Jest to aplikacja, która wspomaga obsługę eventów w konkretnej firmie w UK.
 Główne zadania to umożliwienie komunikacji między użytkownikami oraz udostępnianie informacji oraz plików.
 
-Demo aplikacji jest dostępne pod adresem [messenger.patryk.in](https://messenger.patryk.in).
+[comment]: <> (Demo aplikacji jest dostępne pod adresem [messenger.patryk.in]&#40;https://messenger.patryk.in&#41;.)
 
-Dane dostępowe do aplikacji:
-1. Admin: `admin@samplemail.com` | `password`
-2. Uzytkownik 1: `user1@samplemail.com` | `password`
-3. Użytkownik 2: `user2@samplemail.com` | `password`
+[comment]: <> (Dane dostępowe do aplikacji:)
 
-Baza danych jest resetowana co godzinę poprzez wgranie domyślnych danych.
+[comment]: <> (1. Admin: `admin@samplemail.com` | `password`)
+
+[comment]: <> (2. Uzytkownik 1: `user1@samplemail.com` | `password`)
+
+[comment]: <> (3. Użytkownik 2: `user2@samplemail.com` | `password`)
+
+[comment]: <> (Baza danych jest resetowana co godzinę poprzez wgranie domyślnych danych.)
 
 ## TODO
 ```
