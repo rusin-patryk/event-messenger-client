@@ -1,21 +1,9 @@
 # Event Messenger Client
 
-**Demo aplikacji dostępne będzie od 18.01.2021**
+**Projekt wymaga refaktoryzacji!**
 
 Jest to aplikacja, która wspomaga obsługę eventów w konkretnej firmie w UK.
 Główne zadania to umożliwienie komunikacji między użytkownikami oraz udostępnianie informacji oraz plików.
-
-[comment]: <> (Demo aplikacji jest dostępne pod adresem [messenger.patryk.in]&#40;https://messenger.patryk.in&#41;.)
-
-[comment]: <> (Dane dostępowe do aplikacji:)
-
-[comment]: <> (1. Admin: `admin@samplemail.com` | `password`)
-
-[comment]: <> (2. Uzytkownik 1: `user1@samplemail.com` | `password`)
-
-[comment]: <> (3. Użytkownik 2: `user2@samplemail.com` | `password`)
-
-[comment]: <> (Baza danych jest resetowana co godzinę poprzez wgranie domyślnych danych.)
 
 ## TODO
 ```
