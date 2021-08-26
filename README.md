@@ -1,6 +1,6 @@
 # Event Messenger Client
 
-**Demo aplikacji dostępne będzie od 18.01.2021**
+**Projekt wymaga refaktoryzacji!**
 
 Jest to aplikacja, która wspomaga obsługę eventów w konkretnej firmie w UK.
 Główne zadania to umożliwienie komunikacji między użytkownikami oraz udostępnianie informacji oraz plików.
